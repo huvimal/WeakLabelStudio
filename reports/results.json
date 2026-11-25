@@ -1,0 +1,59 @@
+{
+  "project": "WeakLabelStudio",
+  "number": 5,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-20T04:28:54Z",
+  "duration_seconds": 1.17610502243042,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0"
+  },
+  "source_sha256": {
+    "common.py": "6824312bac56d81a071760617f624272948f76fcae8190f8168a8911c8f7e8b0",
+    "experiment.py": "14662e450479bfd19cf9700f8f59f8d523daea74efdf07856b71b4ab9853d632",
+    "run.py": "f59c8f7399ab614d89f8a565b96f60875e75284d439fe5a38bd6837c730dfdbf"
+  },
+  "result": {
+    "majority_vote": {
+      "accuracy": 0.69,
+      "precision": 0.6902654867256637,
+      "recall": 0.7428571428571429,
+      "f1": 0.7155963302752294,
+      "average_precision": 0.8035993694247976,
+      "fp": 35,
+      "fn": 27,
+      "cases": 200
+    },
+    "gold_fitted_reliability": {
+      "accuracy": 0.82,
+      "precision": 0.8556701030927835,
+      "recall": 0.7904761904761904,
+      "f1": 0.8217821782178217,
+      "average_precision": 0.9124449264087842,
+      "fp": 14,
+      "fn": 22,
+      "cases": 200
+    },
+    "lf_reliabilities": [
+      0.8589743589743589,
+      0.5859872611464968,
+      0.2980132450331126
+    ],
+    "lf_weights": [
+      1.806797346592595,
+      0.3474013071534031,
+      -0.8567766043417473
+    ],
+    "all_abstain_evaluation": 5,
+    "checks": [
+      "Gold development and evaluation are separate",
+      "Finite fitted LF reliability weights",
+      "All-abstain cases return uncertainty"
+    ],
+    "scope": "Supervised gold-fitted LF weighting on synthetic numeric alerts; not an unsupervised label model."
+  },
+  "models_used": [],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}

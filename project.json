@@ -1,0 +1,15 @@
+{
+  "number": 5,
+  "name": "WeakLabelStudio",
+  "short": "Gold-fitted weak labels",
+  "summary": "Learn reliability weights for noisy labeling functions and compare majority voting.",
+  "profile": "core",
+  "timeout": 600,
+  "scope": "Supervised gold-fitted LF weighting on synthetic numeric alerts; not an unsupervised label model.",
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "Data Processing",
+    "Software Testing"
+  ]
+}
